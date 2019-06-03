@@ -1,0 +1,30 @@
+add service entities:
+  title: 'Create new Service entities'
+
+administer service entities:
+  title: 'Administer Service entities'
+  description: 'Allow to access the administration form to configure Service entities.'
+  restrict access: true
+
+delete service entities:
+  title: 'Delete Service entities'
+
+edit service entities:
+  title: 'Edit Service entities'
+
+view published service entities:
+  title: 'View published Service entities'
+
+view unpublished service entities:
+  title: 'View unpublished Service entities'
+
+view all service revisions:
+  title: 'View all Service revisions'
+
+revert all service revisions:
+  title: 'Revert all Service revisions'
+  description: 'Role requires permission <em>view Service revisions</em> and <em>edit rights</em> for service entities in question or <em>administer service entities</em>.'
+
+delete all service revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Service revisions</em> and <em>delete rights</em> for service entities in question or <em>administer service entities</em>.'
