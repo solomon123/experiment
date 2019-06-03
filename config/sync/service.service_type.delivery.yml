@@ -1,0 +1,6 @@
+uuid: 89867409-7336-41ff-8a85-5ee85064fb45
+langcode: en
+status: true
+dependencies: {  }
+id: delivery
+label: Delivery
