@@ -1,0 +1,14 @@
+{
+  "name": "drupal/service",
+  "type": "drupal-module",
+  "description": "List of services provided by our coumpany",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/service",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/service",
+    "source": "http://cgit.drupalcode.org/service"
+  },
+  "require": { }
+}
