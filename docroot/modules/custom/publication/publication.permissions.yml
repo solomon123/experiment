@@ -1,0 +1,6 @@
+administer publication types:
+  title: 'Administer publication types'
+  description: 'Maintain the types of publication entity.'
+  restrict access: true
+access publication overview:
+  title: 'Access publication overview page'

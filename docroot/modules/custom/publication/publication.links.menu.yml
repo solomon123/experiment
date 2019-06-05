@@ -1,0 +1,5 @@
+entity.publication_type.collection:
+  title: 'Publication types'
+  parent: system.admin_structure
+  description: 'Manage and CRUD actions on Publication type.'
+  route_name: entity.publication_type.collection

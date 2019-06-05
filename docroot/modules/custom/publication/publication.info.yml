@@ -1,0 +1,8 @@
+name: Publication
+type: module
+description: 'Provides a publication entity.'
+package: Custom
+core: 8.x
+dependencies:
+  - drupal:text
+configure: entity.publication_type.collection
