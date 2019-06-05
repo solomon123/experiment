@@ -1,0 +1,26 @@
+entity.publication.view:
+  title: View
+  route_name: entity.publication.canonical
+  base_route: entity.publication.canonical
+entity.publication.edit_form:
+  title: Edit
+  route_name: entity.publication.edit_form
+  base_route: entity.publication.canonical
+entity.publication.delete_form:
+  title: Delete
+  route_name: entity.publication.delete_form
+  base_route: entity.publication.canonical
+  weight: 10
+entity.publication.collection:
+  title: Publication
+  route_name: entity.publication.collection
+  base_route: system.admin_content
+  weight: 10
+entity.publication_type.edit_form:
+  title: Edit
+  route_name: entity.publication_type.edit_form
+  base_route: entity.publication_type.edit_form
+entity.publication_type.collection:
+  title: List
+  route_name: entity.publication_type.collection
+  base_route: entity.publication_type.collection
