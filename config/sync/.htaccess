@@ -5,7 +5,7 @@
 
 # Deny all requests from Apache 2.0-2.2.
 <IfModule !mod_authz_core.c>
-  Deny from all
+  allow from all
 </IfModule>
 
 # Turn off all options we don't need.
