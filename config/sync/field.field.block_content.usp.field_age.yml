@@ -1,12 +1,10 @@
-uuid: 4167a46e-9df2-4a58-a585-3fad8f8bf470
+uuid: c0664b1b-07df-42da-968b-87d6f043f99a
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.usp
     - field.storage.block_content.field_age
-  module:
-    - options
 id: block_content.usp.field_age
 field_name: field_age
 entity_type: block_content
@@ -15,7 +13,13 @@ label: Age
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: !!float 18
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  min: !!float 18
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

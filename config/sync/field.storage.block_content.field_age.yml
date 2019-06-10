@@ -1,18 +1,17 @@
-uuid: ff1676d5-6d44-46cd-ac3d-efc4cb2cfb0b
+uuid: dd7feee3-4570-45c5-a4b4-49244716b795
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - options
 id: block_content.field_age
 field_name: field_age
 entity_type: block_content
-type: list_string
+type: decimal
 settings:
-  allowed_values: {  }
-  allowed_values_function: ''
-module: options
+  precision: 10
+  scale: 0
+module: core
 locked: false
 cardinality: 1
 translatable: true

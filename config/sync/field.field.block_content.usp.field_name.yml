@@ -1,4 +1,4 @@
-uuid: abca0fe3-4ef2-42ba-8cd2-fbed09ebc2c5
+uuid: f8121771-b017-465e-9a69-faa46f7eda04
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - block_content.type.usp
     - field.storage.block_content.field_name
   module:
-    - options
+    - text
 id: block_content.usp.field_name
 field_name: field_name
 entity_type: block_content
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: text
