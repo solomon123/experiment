@@ -1,0 +1,39 @@
+uuid: 9ade6241-2096-4feb-bfba-74e8fe765898
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.usp
+    - field.field.block_content.usp.body
+    - field.field.block_content.usp.field_age
+    - field.field.block_content.usp.field_name
+  module:
+    - options
+    - text
+id: block_content.usp.default
+targetEntityType: block_content
+bundle: usp
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_age:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_name:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

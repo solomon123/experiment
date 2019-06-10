@@ -1,0 +1,21 @@
+uuid: 4167a46e-9df2-4a58-a585-3fad8f8bf470
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.usp
+    - field.storage.block_content.field_age
+  module:
+    - options
+id: block_content.usp.field_age
+field_name: field_age
+entity_type: block_content
+bundle: usp
+label: Age
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

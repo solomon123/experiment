@@ -1,0 +1,46 @@
+uuid: bea37347-a11a-4a5f-ab73-f72389928ceb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.usp
+    - field.field.block_content.usp.body
+    - field.field.block_content.usp.field_age
+    - field.field.block_content.usp.field_name
+  module:
+    - text
+id: block_content.usp.default
+targetEntityType: block_content
+bundle: usp
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_age:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_name:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
