@@ -1,0 +1,8 @@
+uuid: d156a116-8d86-4c21-b15f-be1470922066
+langcode: en
+status: true
+dependencies: {  }
+id: standard
+label: Standard
+revision: 1
+description: 'Standard pages goes here!'
