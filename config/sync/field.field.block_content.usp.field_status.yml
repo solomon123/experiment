@@ -1,0 +1,21 @@
+uuid: 46fff3b3-707c-4688-bda3-91234135f0c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.usp
+    - field.storage.block_content.field_status
+  module:
+    - text
+id: block_content.usp.field_status
+field_name: field_status
+entity_type: block_content
+bundle: usp
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

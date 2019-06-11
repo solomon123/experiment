@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.usp.body
     - field.field.block_content.usp.field_age
     - field.field.block_content.usp.field_name
+    - field.field.block_content.usp.field_status
   module:
     - text
 id: block_content.usp.default
@@ -34,6 +35,13 @@ content:
     region: content
   field_name:
     weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_status:
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
