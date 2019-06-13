@@ -26,7 +26,7 @@ content:
     region: content
   field_date:
     weight: 1
-    label: inline
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -35,14 +35,14 @@ content:
     region: content
   field_email:
     weight: 2
-    label: inline
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_image:
     weight: 0
-    label: inline
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
