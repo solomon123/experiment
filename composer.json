@@ -24,6 +24,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.3",
         "drupal/module_filter": "^3.1",
+        "drupal/paragraphs": "^1.8",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
