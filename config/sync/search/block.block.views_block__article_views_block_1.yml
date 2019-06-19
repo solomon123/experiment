@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.article_views
   module:
-    - node
+    - system
     - views
   theme:
     - bartik
@@ -23,10 +23,8 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      page: page
+  request_path:
+    id: request_path
+    pages: '<front>'
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }
