@@ -1,0 +1,22 @@
+uuid: dfb50098-a0b6-4d03-a03b-9bc062785100
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.dev_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.dev_block.body
+field_name: body
+entity_type: block_content
+bundle: dev_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

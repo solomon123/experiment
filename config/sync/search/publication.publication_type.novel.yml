@@ -1,0 +1,6 @@
+uuid: cf7838c7-82dc-44a4-a12d-1906955d38f3
+langcode: en
+status: true
+dependencies: {  }
+id: novel
+label: Novel
