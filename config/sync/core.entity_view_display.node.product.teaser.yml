@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
+    - field.field.node.product.field_product_id
+    - field.field.node.product.field_product_name
     - node.type.product
   module:
     - text
@@ -27,4 +29,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_product_id: true
+  field_product_name: true
+  langcode: true

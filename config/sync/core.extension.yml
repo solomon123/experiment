@@ -20,6 +20,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  facets: 0
   field: 0
   field_ui: 0
   file: 0
@@ -27,6 +28,7 @@ module:
   help: 0
   history: 0
   image: 0
+  language: 0
   link: 0
   menu_ui: 0
   module_filter: 0
@@ -38,7 +40,9 @@ module:
   publication: 0
   quickedit: 0
   rdf: 0
-  search: 0
+  search_api: 0
+  search_api_solr: 0
+  search_api_solr_defaults: 0
   shortcut: 0
   system: 0
   taxonomy: 0

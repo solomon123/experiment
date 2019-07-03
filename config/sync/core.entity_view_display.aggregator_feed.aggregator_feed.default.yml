@@ -38,4 +38,5 @@ content:
     third_party_settings: {  }
     label: inline
 hidden:
+  langcode: true
   more_link: true
