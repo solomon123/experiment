@@ -1,0 +1,568 @@
+2019-07-03 15:57:27.650 INFO  (main) [   ] o.e.j.u.log Logging initialized @799ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-07-03 15:57:27.778 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-07-03 15:57:27.792 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 11.0.2+9
+2019-07-03 15:57:27.813 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/contexts/] at interval 0
+2019-07-03 15:57:28.053 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-07-03 15:57:28.061 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-07-03 15:57:28.061 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-07-03 15:57:28.063 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-07-03 15:57:28.119 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-07-03 15:57:28.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.2
+2019-07-03 15:57:28.125 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-07-03 15:57:28.125 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2
+2019-07-03 15:57:28.125 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-07-03T15:57:28.125674Z
+2019-07-03 15:57:28.163 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr
+2019-07-03 15:57:28.169 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr.xml
+2019-07-03 15:57:28.219 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@bb9e6dc, but no JMX reporters were configured - adding default JMX reporter.
+2019-07-03 15:57:28.567 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-07-03 15:57:28.881 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-07-03 15:57:28.883 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-07-03 15:57:28.949 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@bb9e6dc
+2019-07-03 15:57:28.950 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@bb9e6dc
+2019-07-03 15:57:28.955 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@bb9e6dc
+2019-07-03 15:57:28.994 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr
+2019-07-03 15:57:29.044 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6273c5a4{/solr,file:///Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr-webapp/webapp/,AVAILABLE}{/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr-webapp/webapp}
+2019-07-03 15:57:29.066 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@67a3bd51{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-07-03 15:57:29.066 INFO  (main) [   ] o.e.j.s.Server Started @2217ms
+2019-07-03 15:57:36.304 INFO  (qtp524223214-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=44
+2019-07-03 15:58:29.676 INFO  (qtp524223214-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=14
+2019-07-03 15:58:30.042 INFO  (qtp524223214-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=15
+2019-07-03 15:58:51.143 INFO  (qtp524223214-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=14
+2019-07-03 15:58:51.470 INFO  (qtp524223214-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=13
+2019-07-03 15:58:55.597 INFO  (qtp524223214-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169535513} status=0 QTime=1
+2019-07-03 15:58:55.613 INFO  (qtp524223214-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169535514} status=0 QTime=16
+2019-07-03 15:58:55.633 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169535514} status=0 QTime=16
+2019-07-03 15:59:08.683 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169535513} status=0 QTime=0
+2019-07-03 15:59:08.686 INFO  (qtp524223214-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1562169535513} status=0 QTime=0
+2019-07-03 15:59:08.704 INFO  (qtp524223214-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169535514} status=0 QTime=19
+2019-07-03 15:59:37.183 INFO  (qtp524223214-20) [   x:solr7] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=solr7&action=CREATE&config=solrconfig.xml&instanceDir=solr7&wt=json&_=1562169535513
+2019-07-03 15:59:37.195 ERROR (qtp524223214-20) [   x:solr7] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'solr7': Unable to create core [solr7] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:396)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:736)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:717)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [solr7]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1208)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1097)
+	... 44 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core solr7: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183)
+	... 45 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:190)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 47 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:205)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:182)
+	... 49 more
+
+2019-07-03 15:59:37.196 INFO  (qtp524223214-20) [   x:solr7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=solr7&action=CREATE&config=solrconfig.xml&instanceDir=solr7&wt=json&_=1562169535513} status=400 QTime=15
+2019-07-03 16:00:26.875 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=15
+2019-07-03 16:00:30.979 INFO  (qtp524223214-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:00:30.998 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169630882} status=0 QTime=17
+2019-07-03 16:00:31.018 INFO  (qtp524223214-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169630882} status=0 QTime=16
+2019-07-03 16:00:34.169 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:00:34.171 INFO  (qtp524223214-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:00:34.187 INFO  (qtp524223214-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169630882} status=0 QTime=18
+2019-07-03 16:00:38.459 INFO  (qtp524223214-17) [   x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1562169630881
+2019-07-03 16:00:38.463 ERROR (qtp524223214-17) [   x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'new_core': Unable to create core [new_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:396)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:736)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:717)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [new_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1208)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1097)
+	... 39 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183)
+	... 40 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:190)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 42 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:205)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:182)
+	... 44 more
+
+2019-07-03 16:00:38.464 INFO  (qtp524223214-17) [   x:new_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1562169630881} status=400 QTime=5
+2019-07-03 16:03:08.697 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=14
+2019-07-03 16:03:53.772 INFO  (qtp524223214-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=15
+2019-07-03 16:04:03.294 INFO  (qtp524223214-38) [   x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1562169630881
+2019-07-03 16:04:03.298 ERROR (qtp524223214-38) [   x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'new_core': Unable to create core [new_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:396)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:736)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:717)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [new_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1208)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1097)
+	... 44 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183)
+	... 45 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:190)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 47 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:205)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:182)
+	... 49 more
+
+2019-07-03 16:04:03.299 INFO  (qtp524223214-38) [   x:new_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1562169630881} status=400 QTime=4
+2019-07-03 16:04:11.945 INFO  (qtp524223214-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:04:11.951 INFO  (qtp524223214-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1562169851940&since=0} status=0 QTime=3
+2019-07-03 16:04:11.964 INFO  (qtp524223214-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169630882} status=0 QTime=17
+2019-07-03 16:04:21.947 INFO  (qtp524223214-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1562169851940&since=0} status=0 QTime=0
+2019-07-03 16:04:31.952 INFO  (qtp524223214-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1562169851940&since=0} status=0 QTime=0
+2019-07-03 16:04:41.953 INFO  (qtp524223214-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1562169851940&since=0} status=0 QTime=0
+2019-07-03 16:04:43.946 INFO  (qtp524223214-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:04:43.951 INFO  (qtp524223214-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:04:43.965 INFO  (qtp524223214-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169630882} status=0 QTime=17
+2019-07-03 16:05:00.260 INFO  (qtp524223214-41) [   x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1562169630881
+2019-07-03 16:05:00.264 ERROR (qtp524223214-41) [   x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'new_core': Unable to create core [new_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:396)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:736)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:717)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [new_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1208)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1097)
+	... 44 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183)
+	... 45 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:190)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 47 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:205)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:182)
+	... 49 more
+
+2019-07-03 16:05:00.265 INFO  (qtp524223214-41) [   x:new_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1562169630881} status=400 QTime=5
+2019-07-03 16:06:27.520 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=solr7&action=CREATE&config=solrconfig.xml&instanceDir=solr7&wt=json&_=1562169630881
+2019-07-03 16:06:27.571 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.SolrResourceLoader [solr7] Added 64 libs to classloader, from paths: [/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/contrib/analysis-extras/lib, /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/contrib/analysis-extras/lucene-libs, /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/contrib/extraction/lib, /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/contrib/langid/lib, /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/contrib/velocity/lib, /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/dist]
+2019-07-03 16:06:27.779 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2019-07-03 16:06:27.783 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.0
+2019-07-03 16:06:27.950 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.IndexSchema [solr7] Schema name=drupal-8.3.3-solr-7.x
+2019-07-03 16:06:28.357 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.IndexSchema Loaded schema drupal-8.3.3-solr-7.x/1.6 with uniqueid field id
+2019-07-03 16:06:28.431 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.CoreContainer Creating SolrCore 'solr7' using configuration from instancedir /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7, trusted=true
+2019-07-03 16:06:28.443 INFO  (qtp524223214-21) [   x:solr7] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.solr7' (registry 'solr.core.solr7') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@bb9e6dc
+2019-07-03 16:06:28.458 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.SolrCore [[solr7] ] Opening new SolrCore at [/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7], dataDir=[/Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7/data/]
+2019-07-03 16:06:28.575 INFO  (qtp524223214-21) [   x:solr7] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-07-03 16:06:28.930 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-07-03 16:06:28.931 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-07-03 16:06:28.940 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-07-03 16:06:28.940 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-07-03 16:06:28.959 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.SolrIndexSearcher Opening [Searcher@1a209ae9[solr7] main]
+2019-07-03 16:06:28.970 INFO  (qtp524223214-21) [   x:solr7] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7/conf
+2019-07-03 16:06:28.990 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-07-03 16:06:28.995 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.DirectSolrSpellChecker init: {name=en,field=spellcheck_en,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01,thresholdTokenFrequency=.01,onlyMorePopular=true}
+2019-07-03 16:06:28.996 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.DirectSolrSpellChecker init: {name=und,field=spellcheck_und,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01,thresholdTokenFrequency=.01,onlyMorePopular=true}
+2019-07-03 16:06:28.997 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-07-03 16:06:29.000 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.s.SolrSuggester init: {name=en,lookupImpl=AnalyzingInfixLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=twm_suggest,suggestAnalyzerFieldType=text_en,contextField=sm_context_tags,buildOnCommit=true,buildOnStartup=false}
+2019-07-03 16:06:29.014 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=en,lookupImpl=AnalyzingInfixLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=twm_suggest,suggestAnalyzerFieldType=text_en,contextField=sm_context_tags,buildOnCommit=true,buildOnStartup=false}
+2019-07-03 16:06:29.016 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: en - SuggesterListener [core=org.apache.solr.core.SolrCore@5b7bd0cb, suggester=SolrSuggester [ name=en, sourceLocation=null, storeDir=, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=48 ], buildOnCommit=true, buildOnOptimize=false, buildOnStartup=false, isCoreReload=false]
+2019-07-03 16:06:29.016 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.s.SolrSuggester init: {name=und,lookupImpl=AnalyzingInfixLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=twm_suggest,suggestAnalyzerFieldType=text_und,contextField=sm_context_tags,buildOnCommit=true,buildOnStartup=false}
+2019-07-03 16:06:29.016 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=und,lookupImpl=AnalyzingInfixLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=twm_suggest,suggestAnalyzerFieldType=text_und,contextField=sm_context_tags,buildOnCommit=true,buildOnStartup=false}
+2019-07-03 16:06:29.016 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: und - SuggesterListener [core=org.apache.solr.core.SolrCore@5b7bd0cb, suggester=SolrSuggester [ name=und, sourceLocation=null, storeDir=, lookupImpl=AnalyzingInfixLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=48 ], buildOnCommit=true, buildOnOptimize=false, buildOnStartup=false, isCoreReload=false]
+2019-07-03 16:06:29.017 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Applications/MAMP/htdocs/dev-experiment/solr-7.7.2/server/solr/solr7/conf/elevate.xml
+2019-07-03 16:06:29.027 INFO  (qtp524223214-21) [   x:solr7] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-07-03 16:06:29.031 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1638053958418169856
+2019-07-03 16:06:29.034 INFO  (searcherExecutor-10-thread-1-processing-x:solr7) [   x:solr7] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1a209ae9[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-03 16:06:29.036 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=solr7&action=CREATE&config=solrconfig.xml&instanceDir=solr7&wt=json&_=1562169630881} status=0 QTime=1516
+2019-07-03 16:06:29.075 INFO  (qtp524223214-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1562169630881} status=0 QTime=0
+2019-07-03 16:06:29.098 INFO  (searcherExecutor-10-thread-1-processing-x:solr7) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=61
+2019-07-03 16:06:29.099 INFO  (searcherExecutor-10-thread-1-processing-x:solr7) [   x:solr7] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-03 16:06:29.099 INFO  (searcherExecutor-10-thread-1-processing-x:solr7) [   x:solr7] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: en
+2019-07-03 16:06:29.099 INFO  (searcherExecutor-10-thread-1-processing-x:solr7) [   x:solr7] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: und
+2019-07-03 16:06:29.104 INFO  (qtp524223214-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1562169630882} status=0 QTime=28
+2019-07-03 16:06:29.106 INFO  (searcherExecutor-10-thread-1-processing-x:solr7) [   x:solr7] o.a.s.c.SolrCore [solr7] Registered new searcher Searcher@1a209ae9[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-03 16:06:29.110 INFO  (qtp524223214-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1562169630881} status=0 QTime=27
+2019-07-03 16:06:45.158 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=16
+2019-07-03 16:07:00.838 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/system params={json.nl=flat&wt=json} status=0 QTime=15
+2019-07-03 16:07:01.168 INFO  (qtp524223214-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=13
+2019-07-03 16:07:01.180 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=2
+2019-07-03 16:07:01.180 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=2
+2019-07-03 16:07:01.184 INFO  (qtp524223214-20) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/luke params={json.nl=flat&wt=json} status=0 QTime=2
+2019-07-03 16:07:01.197 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/mbeans params={stats=true?omitHeader%3Dtrue&wt=phps} status=0 QTime=6
+2019-07-03 16:07:01.220 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/system params={json.nl=flat&wt=json} status=0 QTime=13
+2019-07-03 16:07:01.268 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q=*:*&json.facet={"maxVersion":"max(_version_)","siteHahes":{"field":"hash","limit":-1,"type":"terms","facet":{"indexes":{"field":"index_id","limit":-1,"type":"terms","facet":{"dataSources":{"field":"ss_search_api_datasource","limit":-1,"type":"terms","facet":{"maxVersionPerDataSource":"max(_version_)"}}}}}}}&json.nl=flat&omitHeader=true&fl=id&start=0&fq=%2Bhash:*+%2Bindex_id:*&rows=1&wt=json} hits=0 status=0 QTime=33
+2019-07-03 16:07:54.404 INFO  (qtp524223214-20) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:07:54.404 INFO  (qtp524223214-20) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:07:54.430 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:07:54.430 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:07:54.442 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:07:54.442 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:07:54.444 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:07:54.444 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:07:54.451 INFO  (qtp524223214-20) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/schema/fieldtypes params={json.nl=flat&wt=json} status=0 QTime=3
+2019-07-03 16:07:59.055 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:07:59.055 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:08:33.460 INFO  (qtp524223214-24) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:08:33.460 INFO  (qtp524223214-24) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:08:41.904 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:08:41.904 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:08:41.929 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:08:41.930 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:08:41.939 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:08:41.939 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:08:41.942 INFO  (qtp524223214-24) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:08:41.942 INFO  (qtp524223214-24) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:08:45.715 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=0 status=0 QTime=0
+2019-07-03 16:08:45.715 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:09:24.358 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q={!boost+b%3Dboost_document}*:*&json.nl=flat&omitHeader=true&fl=ss_search_api_id,ss_search_api_language,score,hash&start=0&fq=%2Bindex_id:solr7_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=0&wt=json} hits=0 status=0 QTime=7
+2019-07-03 16:09:29.148 INFO  (qtp524223214-15) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{add=[rgak7n-solr7_index-entity:node/100:en (1638054147174432768), rgak7n-solr7_index-entity:node/101:en (1638054147234201600), rgak7n-solr7_index-entity:node/102:en (1638054147236298752), rgak7n-solr7_index-entity:node/103:en (1638054147237347328), rgak7n-solr7_index-entity:node/104:en (1638054147238395904), rgak7n-solr7_index-entity:node/105:en (1638054147239444480), rgak7n-solr7_index-entity:node/106:en (1638054147241541632), rgak7n-solr7_index-entity:node/107:en (1638054147242590208), rgak7n-solr7_index-entity:node/108:en (1638054147243638784), rgak7n-solr7_index-entity:node/109:en (1638054147244687360), ... (50 adds)]} 0 169
+2019-07-03 16:09:29.232 INFO  (qtp524223214-24) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{add=[rgak7n-solr7_index-entity:node/41:en (1638054147325427712), rgak7n-solr7_index-entity:node/42:en (1638054147326476288), rgak7n-solr7_index-entity:node/43:en (1638054147327524864), rgak7n-solr7_index-entity:node/44:en (1638054147327524865), rgak7n-solr7_index-entity:node/45:en (1638054147328573440), rgak7n-solr7_index-entity:node/46:en (1638054147329622016), rgak7n-solr7_index-entity:node/47:en (1638054147330670592), rgak7n-solr7_index-entity:node/48:en (1638054147330670593), rgak7n-solr7_index-entity:node/49:en (1638054147331719168), rgak7n-solr7_index-entity:node/4:und (1638054147331719169), ... (50 adds)]} 0 45
+2019-07-03 16:09:29.260 INFO  (qtp524223214-22) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{add=[rgak7n-solr7_index-entity:node/87:en (1638054147392536576), rgak7n-solr7_index-entity:node/88:en (1638054147393585152), rgak7n-solr7_index-entity:node/89:en (1638054147394633728), rgak7n-solr7_index-entity:node/8:und (1638054147394633729), rgak7n-solr7_index-entity:node/90:en (1638054147395682304), rgak7n-solr7_index-entity:node/91:en (1638054147395682305), rgak7n-solr7_index-entity:node/92:en (1638054147396730880), rgak7n-solr7_index-entity:node/93:en (1638054147396730881), rgak7n-solr7_index-entity:node/94:en (1638054147396730882), rgak7n-solr7_index-entity:node/95:en (1638054147397779456), ... (15 adds)]} 0 10
+2019-07-03 16:09:29.829 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q={!boost+b%3Dboost_document}*:*&json.nl=flat&omitHeader=true&fl=ss_search_api_id,ss_search_api_language,score,hash&start=0&fq=%2Bindex_id:solr7_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=0&wt=json} hits=0 status=0 QTime=1
+2019-07-03 16:09:30.104 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-07-03 16:09:30.208 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@30fa04a5[solr7] main]
+2019-07-03 16:09:30.209 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:09:30.209 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@30fa04a5[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]))}
+2019-07-03 16:09:30.209 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-03 16:09:30.209 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: en
+2019-07-03 16:09:30.209 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(en)
+2019-07-03 16:09:30.254 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: und
+2019-07-03 16:09:30.256 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(und)
+2019-07-03 16:09:30.300 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [solr7] Registered new searcher Searcher@30fa04a5[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]))}
+2019-07-03 16:09:39.167 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=5
+2019-07-03 16:09:39.167 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=5
+2019-07-03 16:09:44.102 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-07-03 16:09:44.102 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@b2413cd commitCommandVersion:0
+2019-07-03 16:09:44.161 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@32566bbb[solr7] realtime]
+2019-07-03 16:09:44.161 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:10:19.993 INFO  (qtp524223214-24) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:10:19.993 INFO  (qtp524223214-24) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:10:20.019 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:10:20.019 INFO  (qtp524223214-22) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:10:20.028 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:10:20.028 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:10:20.030 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:10:20.030 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:56:22.457 INFO  (qtp524223214-39) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=1
+2019-07-03 16:56:22.458 INFO  (qtp524223214-39) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=2
+2019-07-03 16:56:22.492 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:56:22.492 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:56:22.502 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:56:22.502 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:56:22.505 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:56:22.505 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:56:27.931 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:56:27.931 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:56:47.804 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:56:47.804 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=1
+2019-07-03 16:57:15.502 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/system params={json.nl=flat&wt=json} status=0 QTime=19
+2019-07-03 16:57:15.762 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:15.762 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:19.536 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:19.536 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:19.552 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:19.553 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:28.842 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:28.842 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:28.907 INFO  (qtp524223214-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={json.nl=flat&wt=json} status=0 QTime=14
+2019-07-03 16:57:28.915 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:28.915 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:28.922 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/luke params={json.nl=flat&wt=json} status=0 QTime=5
+2019-07-03 16:57:28.933 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/mbeans params={stats=true?omitHeader%3Dtrue&wt=phps} status=0 QTime=3
+2019-07-03 16:57:28.952 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/system params={json.nl=flat&wt=json} status=0 QTime=15
+2019-07-03 16:57:29.001 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q=*:*&json.facet={"maxVersion":"max(_version_)","siteHahes":{"field":"hash","limit":-1,"type":"terms","facet":{"indexes":{"field":"index_id","limit":-1,"type":"terms","facet":{"dataSources":{"field":"ss_search_api_datasource","limit":-1,"type":"terms","facet":{"maxVersionPerDataSource":"max(_version_)"}}}}}}}&json.nl=flat&omitHeader=true&fl=id&start=0&fq=%2Bhash:*+%2Bindex_id:*&rows=1&wt=json} hits=115 status=0 QTime=32
+2019-07-03 16:57:48.771 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:48.772 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=1
+2019-07-03 16:57:48.790 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:48.790 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:52.349 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:52.349 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:52.364 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=115 status=0 QTime=0
+2019-07-03 16:57:52.365 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:57:56.943 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q={!boost+b%3Dboost_document}*:*&json.nl=flat&omitHeader=true&fl=ss_search_api_id,ss_search_api_language,score&start=0&fq=%2Bindex_id:default_solr_index+%2Bhash:rgak7n&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=0&wt=json} hits=0 status=0 QTime=6
+2019-07-03 16:58:13.587 INFO  (qtp524223214-23) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{deleteByQuery=+index_id:default_solr_index +hash:rgak7n (-1638057213770596352)} 0 10
+2019-07-03 16:58:14.590 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-07-03 16:58:14.590 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@4436057d[solr7] main]
+2019-07-03 16:58:14.591 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:58:14.591 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4436057d[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]))}
+2019-07-03 16:58:14.591 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-03 16:58:14.591 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: en
+2019-07-03 16:58:14.591 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(en)
+2019-07-03 16:58:14.633 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: und
+2019-07-03 16:58:14.633 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(und)
+2019-07-03 16:58:14.698 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [solr7] Registered new searcher Searcher@4436057d[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]))}
+2019-07-03 16:58:15.080 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q={!boost+b%3Dboost_document}*:*&json.nl=flat&omitHeader=true&fl=ss_search_api_id,ss_search_api_language,score,hash&start=0&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=0&wt=json} hits=0 status=0 QTime=2
+2019-07-03 16:58:20.944 INFO  (qtp524223214-18) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{delete=[rgak7n-default_solr_index-entity:node/10:und (-1638057221494407168), rgak7n-default_solr_index-entity:node/1:und (-1638057221495455744), rgak7n-default_solr_index-entity:node/2:und (-1638057221495455745), rgak7n-default_solr_index-entity:node/3:und (-1638057221495455746)]} 0 2
+2019-07-03 16:58:21.188 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{add=[rgak7n-default_solr_index-entity:node/100:en (1638057221536350208), rgak7n-default_solr_index-entity:node/101:en (1638057221569904640), rgak7n-default_solr_index-entity:node/102:en (1638057221580390400), rgak7n-default_solr_index-entity:node/103:en (1638057221587730432), rgak7n-default_solr_index-entity:node/104:en (1638057221595070464), rgak7n-default_solr_index-entity:node/105:en (1638057221600313344), rgak7n-default_solr_index-entity:node/106:en (1638057221604507648), rgak7n-default_solr_index-entity:node/107:en (1638057221610799104), rgak7n-default_solr_index-entity:node/108:en (1638057221614993408), rgak7n-default_solr_index-entity:node/109:en (1638057221619187712), ... (46 adds)]} 0 205
+2019-07-03 16:58:21.949 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-07-03 16:58:22.004 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@1b29fa3c[solr7] main]
+2019-07-03 16:58:22.004 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:58:22.004 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1b29fa3c[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}] Uninverting(_1(7.7.2):C46:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173101997}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-07-03 16:58:22.004 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-03 16:58:22.004 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: en
+2019-07-03 16:58:22.004 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(en)
+2019-07-03 16:58:22.042 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: und
+2019-07-03 16:58:22.042 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(und)
+2019-07-03 16:58:22.083 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [solr7] Registered new searcher Searcher@1b29fa3c[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}] Uninverting(_1(7.7.2):C46:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173101997}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-07-03 16:58:22.170 INFO  (qtp524223214-23) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{delete=[rgak7n-default_solr_index-entity:node/4:und (-1638057222779961344), rgak7n-default_solr_index-entity:node/5:und (-1638057222779961345), rgak7n-default_solr_index-entity:node/6:und (-1638057222779961346), rgak7n-default_solr_index-entity:node/7:und (-1638057222779961347)]} 0 1
+2019-07-03 16:58:22.305 INFO  (qtp524223214-15) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{add=[rgak7n-default_solr_index-entity:node/41:en (1638057222819807232), rgak7n-default_solr_index-entity:node/42:en (1638057222825050112), rgak7n-default_solr_index-entity:node/43:en (1638057222827147264), rgak7n-default_solr_index-entity:node/44:en (1638057222829244416), rgak7n-default_solr_index-entity:node/45:en (1638057222831341568), rgak7n-default_solr_index-entity:node/46:en (1638057222835535872), rgak7n-default_solr_index-entity:node/47:en (1638057222837633024), rgak7n-default_solr_index-entity:node/48:en (1638057222839730176), rgak7n-default_solr_index-entity:node/49:en (1638057222841827328), rgak7n-default_solr_index-entity:node/50:en (1638057222842875904), ... (46 adds)]} 0 98
+2019-07-03 16:58:22.473 INFO  (qtp524223214-18) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{delete=[rgak7n-default_solr_index-entity:node/8:und (-1638057223098728448), rgak7n-default_solr_index-entity:node/9:und (-1638057223098728449)]} 0 0
+2019-07-03 16:58:22.508 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{add=[rgak7n-default_solr_index-entity:node/87:en (1638057223110262784), rgak7n-default_solr_index-entity:node/88:en (1638057223113408512), rgak7n-default_solr_index-entity:node/89:en (1638057223114457088), rgak7n-default_solr_index-entity:node/90:en (1638057223116554240), rgak7n-default_solr_index-entity:node/91:en (1638057223118651392), rgak7n-default_solr_index-entity:node/92:en (1638057223119699968), rgak7n-default_solr_index-entity:node/93:en (1638057223121797120), rgak7n-default_solr_index-entity:node/94:en (1638057223123894272), rgak7n-default_solr_index-entity:node/95:en (1638057223124942848), rgak7n-default_solr_index-entity:node/96:en (1638057223128088576), ... (13 adds)]} 0 25
+2019-07-03 16:58:23.099 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={q={!boost+b%3Dboost_document}*:*&json.nl=flat&omitHeader=true&fl=ss_search_api_id,ss_search_api_language,score,hash&start=0&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=0&wt=json} hits=46 status=0 QTime=2
+2019-07-03 16:58:23.170 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-07-03 16:58:23.191 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5baddd29[solr7] main]
+2019-07-03 16:58:23.191 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:58:23.191 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5baddd29[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}] Uninverting(_1(7.7.2):C46:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173101997}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(7.7.2):C59:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173103187}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-07-03 16:58:23.191 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-03 16:58:23.191 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: en
+2019-07-03 16:58:23.191 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(en)
+2019-07-03 16:58:23.240 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: und
+2019-07-03 16:58:23.240 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(und)
+2019-07-03 16:58:23.279 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [solr7] Registered new searcher Searcher@5baddd29[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(_0(7.7.2):C115:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562170170177}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}] Uninverting(_1(7.7.2):C46:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173101997}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(7.7.2):C59:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173103187}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-07-03 16:58:28.589 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-07-03 16:58:28.592 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@b2413cd commitCommandVersion:0
+2019-07-03 16:58:28.657 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@37d13eb4[solr7] realtime]
+2019-07-03 16:58:28.658 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:58:29.440 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Causa")^1+tm_X3b_und_rendered_item:(%2B"Causa")^1+tm_X3b_zxx_rendered_item:(%2B"Causa")^1+tm_X3b_en_title:(%2B"Causa")^8+tm_X3b_und_title:(%2B"Causa")^8+tm_X3b_zxx_title:(%2B"Causa")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Causa"+func%3Dmax}'}} hits=97 status=0 QTime=50
+2019-07-03 16:58:39.611 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}((%2B(tm_X3b_en_rendered_item:"Abigo"^1+tm_X3b_und_rendered_item:"Abigo"^1+tm_X3b_zxx_rendered_item:"Abigo"^1+tm_X3b_en_title:"Abigo"^8+tm_X3b_und_title:"Abigo"^8+tm_X3b_zxx_title:"Abigo"^8)+%2B(tm_X3b_en_rendered_item:"exerci"^1+tm_X3b_und_rendered_item:"exerci"^1+tm_X3b_zxx_rendered_item:"exerci"^1+tm_X3b_en_title:"exerci"^8+tm_X3b_und_title:"exerci"^8+tm_X3b_zxx_title:"exerci"^8)+%2B(tm_X3b_en_rendered_item:"importunu"^1+tm_X3b_und_rendered_item:"importunu"^1+tm_X3b_zxx_rendered_item:"importunu"^1+tm_X3b_en_title:"importunu"^8+tm_X3b_und_title:"importunu"^8+tm_X3b_zxx_title:"importunu"^8))+tm_X3b_en_rendered_item:(%2B"Abigo"+%2B"exerci"+%2B"importunu")^1+tm_X3b_und_rendered_item:(%2B"Abigo"+%2B"exerci"+%2B"importunu")^1+tm_X3b_zxx_rendered_item:(%2B"Abigo"+%2B"exerci"+%2B"importunu")^1+tm_X3b_en_title:(%2B"Abigo"+%2B"exerci"+%2B"importunu")^8+tm_X3b_und_title:(%2B"Abigo"+%2B"exerci"+%2B"importunu")^8+tm_X3b_zxx_title:(%2B"Abigo"+%2B"exerci"+%2B"importunu")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Abigo"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"exerci"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"importunu"+func%3Dmax}'}} hits=0 status=0 QTime=9
+2019-07-03 16:58:43.620 INFO  (qtp524223214-21) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}((%2B(tm_X3b_en_rendered_item:"Abigo"^1+tm_X3b_und_rendered_item:"Abigo"^1+tm_X3b_zxx_rendered_item:"Abigo"^1+tm_X3b_en_title:"Abigo"^8+tm_X3b_und_title:"Abigo"^8+tm_X3b_zxx_title:"Abigo"^8)+%2B(tm_X3b_en_rendered_item:"exerci"^1+tm_X3b_und_rendered_item:"exerci"^1+tm_X3b_zxx_rendered_item:"exerci"^1+tm_X3b_en_title:"exerci"^8+tm_X3b_und_title:"exerci"^8+tm_X3b_zxx_title:"exerci"^8))+tm_X3b_en_rendered_item:(%2B"Abigo"+%2B"exerci")^1+tm_X3b_und_rendered_item:(%2B"Abigo"+%2B"exerci")^1+tm_X3b_zxx_rendered_item:(%2B"Abigo"+%2B"exerci")^1+tm_X3b_en_title:(%2B"Abigo"+%2B"exerci")^8+tm_X3b_und_title:(%2B"Abigo"+%2B"exerci")^8+tm_X3b_zxx_title:(%2B"Abigo"+%2B"exerci")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Abigo"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"exerci"+func%3Dmax}'}} hits=92 status=0 QTime=8
+2019-07-03 16:59:00.143 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=220 status=0 QTime=0
+2019-07-03 16:59:00.144 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:59:00.160 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=220 status=0 QTime=0
+2019-07-03 16:59:00.160 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:59:26.088 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=220 status=0 QTime=0
+2019-07-03 16:59:26.088 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:59:34.537 INFO  (qtp524223214-21) [   x:solr7] o.a.s.s.SolrIndexSearcher Opening [Searcher@3c248ba[solr7] realtime]
+2019-07-03 16:59:34.537 INFO  (qtp524223214-21) [   x:solr7] o.a.s.u.p.LogUpdateProcessorFactory [solr7]  webapp=/solr path=/update params={json.nl=flat&commitWithin=1000&omitHeader=false&wt=json}{deleteByQuery=+index_id:solr7_index +hash:rgak7n (-1638057298653872128)} 0 9
+2019-07-03 16:59:34.793 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=220 status=0 QTime=0
+2019-07-03 16:59:34.793 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 16:59:35.541 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-07-03 16:59:35.543 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@43e9fb1a[solr7] main]
+2019-07-03 16:59:35.544 INFO  (commitScheduler-14-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:59:35.544 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@43e9fb1a[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.7.2):C46:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173101997}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(7.7.2):C59:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173103187}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-07-03 16:59:35.545 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-03 16:59:35.545 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: en
+2019-07-03 16:59:35.545 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(en)
+2019-07-03 16:59:35.595 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.h.c.SuggestComponent buildOnCommit: und
+2019-07-03 16:59:35.595 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.s.s.SolrSuggester SolrSuggester.build(und)
+2019-07-03 16:59:35.660 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [solr7] Registered new searcher Searcher@43e9fb1a[solr7] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.7.2):C46:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173101997}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(7.7.2):C59:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=11.0.2, java.vm.version=11.0.2+9, lucene.version=7.7.2, os.arch=x86_64, java.runtime.version=11.0.2+9, source=flush, os.version=10.13.6, timestamp=1562173103187}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-07-03 16:59:44.256 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}((%2B(tm_X3b_en_rendered_item:"Abigo"^1+tm_X3b_und_rendered_item:"Abigo"^1+tm_X3b_zxx_rendered_item:"Abigo"^1+tm_X3b_en_title:"Abigo"^8+tm_X3b_und_title:"Abigo"^8+tm_X3b_zxx_title:"Abigo"^8)+%2B(tm_X3b_en_rendered_item:"exerci"^1+tm_X3b_und_rendered_item:"exerci"^1+tm_X3b_zxx_rendered_item:"exerci"^1+tm_X3b_en_title:"exerci"^8+tm_X3b_und_title:"exerci"^8+tm_X3b_zxx_title:"exerci"^8))+tm_X3b_en_rendered_item:(%2B"Abigo"+%2B"exerci")^1+tm_X3b_und_rendered_item:(%2B"Abigo"+%2B"exerci")^1+tm_X3b_zxx_rendered_item:(%2B"Abigo"+%2B"exerci")^1+tm_X3b_en_title:(%2B"Abigo"+%2B"exerci")^8+tm_X3b_und_title:(%2B"Abigo"+%2B"exerci")^8+tm_X3b_zxx_title:(%2B"Abigo"+%2B"exerci")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Abigo"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"exerci"+func%3Dmax}'}} hits=92 status=0 QTime=10
+2019-07-03 16:59:49.538 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-07-03 16:59:49.539 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@b2413cd commitCommandVersion:0
+2019-07-03 16:59:49.581 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@4a6ce8ed[solr7] realtime]
+2019-07-03 16:59:49.582 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-03 16:59:52.646 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Dolor")^1+tm_X3b_und_rendered_item:(%2B"Dolor")^1+tm_X3b_zxx_rendered_item:(%2B"Dolor")^1+tm_X3b_en_title:(%2B"Dolor")^8+tm_X3b_und_title:(%2B"Dolor")^8+tm_X3b_zxx_title:(%2B"Dolor")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Dolor"+func%3Dmax}'}} hits=104 status=0 QTime=4
+2019-07-03 17:03:00.508 INFO  (qtp524223214-47) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=105 status=0 QTime=0
+2019-07-03 17:03:00.508 INFO  (qtp524223214-47) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=1
+2019-07-03 17:03:07.489 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=105 status=0 QTime=0
+2019-07-03 17:03:07.489 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=0
+2019-07-03 17:03:13.725 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Dolor")^1+tm_X3b_und_rendered_item:(%2B"Dolor")^1+tm_X3b_zxx_rendered_item:(%2B"Dolor")^1+tm_X3b_en_title:(%2B"Dolor")^8+tm_X3b_und_title:(%2B"Dolor")^8+tm_X3b_zxx_title:(%2B"Dolor")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Dolor"+func%3Dmax}'}} hits=104 status=0 QTime=3
+2019-07-03 17:03:19.992 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"xcv")^1+tm_X3b_und_rendered_item:(%2B"xcv")^1+tm_X3b_zxx_rendered_item:(%2B"xcv")^1+tm_X3b_en_title:(%2B"xcv")^8+tm_X3b_und_title:(%2B"xcv")^8+tm_X3b_zxx_title:(%2B"xcv")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"xcv"+func%3Dmax}'}} hits=0 status=0 QTime=2
+2019-07-03 17:03:36.690 INFO  (qtp524223214-39) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Quadrum")^1+tm_X3b_und_rendered_item:(%2B"Quadrum")^1+tm_X3b_zxx_rendered_item:(%2B"Quadrum")^1+tm_X3b_en_title:(%2B"Quadrum")^8+tm_X3b_und_title:(%2B"Quadrum")^8+tm_X3b_zxx_title:(%2B"Quadrum")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Quadrum"+func%3Dmax}'}} hits=96 status=0 QTime=4
+2019-07-03 17:03:48.681 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=10&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Quadrum")^1+tm_X3b_und_rendered_item:(%2B"Quadrum")^1+tm_X3b_zxx_rendered_item:(%2B"Quadrum")^1+tm_X3b_en_title:(%2B"Quadrum")^8+tm_X3b_und_title:(%2B"Quadrum")^8+tm_X3b_zxx_title:(%2B"Quadrum")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Quadrum"+func%3Dmax}'}} hits=96 status=0 QTime=2
+2019-07-03 17:03:58.539 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=20&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Quadrum")^1+tm_X3b_und_rendered_item:(%2B"Quadrum")^1+tm_X3b_zxx_rendered_item:(%2B"Quadrum")^1+tm_X3b_en_title:(%2B"Quadrum")^8+tm_X3b_und_title:(%2B"Quadrum")^8+tm_X3b_zxx_title:(%2B"Quadrum")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Quadrum"+func%3Dmax}'}} hits=96 status=0 QTime=5
+2019-07-03 17:04:12.336 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq={!tag%3Dfacet:type}ss_type:"page"&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Quadrum")^1+tm_X3b_und_rendered_item:(%2B"Quadrum")^1+tm_X3b_zxx_rendered_item:(%2B"Quadrum")^1+tm_X3b_en_title:(%2B"Quadrum")^8+tm_X3b_und_title:(%2B"Quadrum")^8+tm_X3b_zxx_title:(%2B"Quadrum")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Quadrum"+func%3Dmax}'}} hits=51 status=0 QTime=5
+2019-07-03 17:04:17.778 INFO  (qtp524223214-39) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}((%2B(tm_X3b_en_rendered_item:"sent"^1+tm_X3b_und_rendered_item:"sent"^1+tm_X3b_zxx_rendered_item:"sent"^1+tm_X3b_en_title:"sent"^8+tm_X3b_und_title:"sent"^8+tm_X3b_zxx_title:"sent"^8)+%2B(tm_X3b_en_rendered_item:"refoveo"^1+tm_X3b_und_rendered_item:"refoveo"^1+tm_X3b_zxx_rendered_item:"refoveo"^1+tm_X3b_en_title:"refoveo"^8+tm_X3b_und_title:"refoveo"^8+tm_X3b_zxx_title:"refoveo"^8)+%2B(tm_X3b_en_rendered_item:"utinam"^1+tm_X3b_und_rendered_item:"utinam"^1+tm_X3b_zxx_rendered_item:"utinam"^1+tm_X3b_en_title:"utinam"^8+tm_X3b_und_title:"utinam"^8+tm_X3b_zxx_title:"utinam"^8)+%2B(tm_X3b_en_rendered_item:"valde"^1+tm_X3b_und_rendered_item:"valde"^1+tm_X3b_zxx_rendered_item:"valde"^1+tm_X3b_en_title:"valde"^8+tm_X3b_und_title:"valde"^8+tm_X3b_zxx_title:"valde"^8))+tm_X3b_en_rendered_item:(%2B"sent"+%2B"refoveo"+%2B"utinam"+%2B"valde")^1+tm_X3b_und_rendered_item:(%2B"sent"+%2B"refoveo"+%2B"utinam"+%2B"valde")^1+tm_X3b_zxx_rendered_item:(%2B"sent"+%2B"refoveo"+%2B"utinam"+%2B"valde")^1+tm_X3b_en_title:(%2B"sent"+%2B"refoveo"+%2B"utinam"+%2B"valde")^8+tm_X3b_und_title:(%2B"sent"+%2B"refoveo"+%2B"utinam"+%2B"valde")^8+tm_X3b_zxx_title:(%2B"sent"+%2B"refoveo"+%2B"utinam"+%2B"valde")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"sent"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"refoveo"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"utinam"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"valde"+func%3Dmax}'}} hits=0 status=0 QTime=5
+2019-07-03 17:04:23.952 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}((%2B(tm_X3b_en_rendered_item:"refoveo"^1+tm_X3b_und_rendered_item:"refoveo"^1+tm_X3b_zxx_rendered_item:"refoveo"^1+tm_X3b_en_title:"refoveo"^8+tm_X3b_und_title:"refoveo"^8+tm_X3b_zxx_title:"refoveo"^8)+%2B(tm_X3b_en_rendered_item:"utinam"^1+tm_X3b_und_rendered_item:"utinam"^1+tm_X3b_zxx_rendered_item:"utinam"^1+tm_X3b_en_title:"utinam"^8+tm_X3b_und_title:"utinam"^8+tm_X3b_zxx_title:"utinam"^8)+%2B(tm_X3b_en_rendered_item:"valde"^1+tm_X3b_und_rendered_item:"valde"^1+tm_X3b_zxx_rendered_item:"valde"^1+tm_X3b_en_title:"valde"^8+tm_X3b_und_title:"valde"^8+tm_X3b_zxx_title:"valde"^8))+tm_X3b_en_rendered_item:(%2B"refoveo"+%2B"utinam"+%2B"valde")^1+tm_X3b_und_rendered_item:(%2B"refoveo"+%2B"utinam"+%2B"valde")^1+tm_X3b_zxx_rendered_item:(%2B"refoveo"+%2B"utinam"+%2B"valde")^1+tm_X3b_en_title:(%2B"refoveo"+%2B"utinam"+%2B"valde")^8+tm_X3b_und_title:(%2B"refoveo"+%2B"utinam"+%2B"valde")^8+tm_X3b_zxx_title:(%2B"refoveo"+%2B"utinam"+%2B"valde")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"refoveo"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"utinam"+func%3Dmax}+{!payload_score+f%3Dboost_term+v%3D"valde"+func%3Dmax}'}} hits=87 status=0 QTime=6
+2019-07-03 17:05:26.331 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"refoveo+utinam+valde")^1+tm_X3b_und_rendered_item:(%2B"refoveo+utinam+valde")^1+tm_X3b_zxx_rendered_item:(%2B"refoveo+utinam+valde")^1+tm_X3b_en_title:(%2B"refoveo+utinam+valde")^8+tm_X3b_und_title:(%2B"refoveo+utinam+valde")^8+tm_X3b_zxx_title:(%2B"refoveo+utinam+valde")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"refoveo+utinam+valde"+func%3Dmax}'}} hits=1 status=0 QTime=15
+2019-07-03 17:06:42.267 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"refoveo+utinam")^1+tm_X3b_und_rendered_item:(%2B"refoveo+utinam")^1+tm_X3b_zxx_rendered_item:(%2B"refoveo+utinam")^1+tm_X3b_en_title:(%2B"refoveo+utinam")^8+tm_X3b_und_title:(%2B"refoveo+utinam")^8+tm_X3b_zxx_title:(%2B"refoveo+utinam")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"refoveo+utinam"+func%3Dmax}'}} hits=2 status=0 QTime=6
+2019-07-03 17:06:46.853 INFO  (qtp524223214-39) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"refoveo+utinam")^1+tm_X3b_und_rendered_item:(%2B"refoveo+utinam")^1+tm_X3b_zxx_rendered_item:(%2B"refoveo+utinam")^1+tm_X3b_en_title:(%2B"refoveo+utinam")^8+tm_X3b_und_title:(%2B"refoveo+utinam")^8+tm_X3b_zxx_title:(%2B"refoveo+utinam")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"refoveo+utinam"+func%3Dmax}'}} hits=2 status=0 QTime=3
+2019-07-03 17:06:53.669 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"jgt")^1+tm_X3b_und_rendered_item:(%2B"jgt")^1+tm_X3b_zxx_rendered_item:(%2B"jgt")^1+tm_X3b_en_title:(%2B"jgt")^8+tm_X3b_und_title:(%2B"jgt")^8+tm_X3b_zxx_title:(%2B"jgt")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"jgt"+func%3Dmax}'}} hits=0 status=0 QTime=2
+2019-07-03 17:06:58.578 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"gbm")^1+tm_X3b_und_rendered_item:(%2B"gbm")^1+tm_X3b_zxx_rendered_item:(%2B"gbm")^1+tm_X3b_en_title:(%2B"gbm")^8+tm_X3b_und_title:(%2B"gbm")^8+tm_X3b_zxx_title:(%2B"gbm")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"gbm"+func%3Dmax}'}} hits=0 status=0 QTime=1
+2019-07-03 17:07:11.624 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"valde")^1+tm_X3b_und_rendered_item:(%2B"valde")^1+tm_X3b_zxx_rendered_item:(%2B"valde")^1+tm_X3b_en_title:(%2B"valde")^8+tm_X3b_und_title:(%2B"valde")^8+tm_X3b_zxx_title:(%2B"valde")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"valde"+func%3Dmax}'}} hits=97 status=0 QTime=4
+2019-07-03 17:07:18.712 INFO  (qtp524223214-39) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"vald")^1+tm_X3b_und_rendered_item:(%2B"vald")^1+tm_X3b_zxx_rendered_item:(%2B"vald")^1+tm_X3b_en_title:(%2B"vald")^8+tm_X3b_und_title:(%2B"vald")^8+tm_X3b_zxx_title:(%2B"vald")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"vald"+func%3Dmax}'}} hits=97 status=0 QTime=2
+2019-07-03 17:07:26.604 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"val")^1+tm_X3b_und_rendered_item:(%2B"val")^1+tm_X3b_zxx_rendered_item:(%2B"val")^1+tm_X3b_en_title:(%2B"val")^8+tm_X3b_und_title:(%2B"val")^8+tm_X3b_zxx_title:(%2B"val")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"val"+func%3Dmax}'}} hits=0 status=0 QTime=2
+2019-07-03 17:07:32.174 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"val*")^1+tm_X3b_und_rendered_item:(%2B"val*")^1+tm_X3b_zxx_rendered_item:(%2B"val*")^1+tm_X3b_en_title:(%2B"val*")^8+tm_X3b_und_title:(%2B"val*")^8+tm_X3b_zxx_title:(%2B"val*")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"val*"+func%3Dmax}'}} hits=0 status=0 QTime=5
+2019-07-03 17:07:40.283 INFO  (qtp524223214-18) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"vald")^1+tm_X3b_und_rendered_item:(%2B"vald")^1+tm_X3b_zxx_rendered_item:(%2B"vald")^1+tm_X3b_en_title:(%2B"vald")^8+tm_X3b_und_title:(%2B"vald")^8+tm_X3b_zxx_title:(%2B"vald")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"vald"+func%3Dmax}'}} hits=97 status=0 QTime=2
+2019-07-03 17:08:41.291 INFO  (qtp524223214-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=16
+2019-07-03 17:09:19.700 INFO  (qtp524223214-23) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"vald")^1+tm_X3b_und_rendered_item:(%2B"vald")^1+tm_X3b_zxx_rendered_item:(%2B"vald")^1+tm_X3b_en_title:(%2B"vald")^8+tm_X3b_und_title:(%2B"vald")^8+tm_X3b_zxx_title:(%2B"vald")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"vald"+func%3Dmax}'}} hits=97 status=0 QTime=1
+2019-07-03 17:09:37.013 INFO  (qtp524223214-15) [   x:solr7] o.a.s.c.S.Request [solr7]  webapp=/solr path=/select params={facet.field={!key%3Dss_type+ex%3Dfacet:type}ss_type&json.nl=flat&fl=ss_search_api_id,ss_search_api_language,score,hash&f.ss_type.facet.missing=false&start=0&facet.missing=false&fq=%2Bindex_id:default_solr_index&fq=ss_search_api_language:("en"+"und"+"zxx")&rows=10&f.ss_type.facet.limit=-1&q={!boost+b%3Dboost_document}(tm_X3b_en_rendered_item:(%2B"Quadrum")^1+tm_X3b_und_rendered_item:(%2B"Quadrum")^1+tm_X3b_zxx_rendered_item:(%2B"Quadrum")^1+tm_X3b_en_title:(%2B"Quadrum")^8+tm_X3b_und_title:(%2B"Quadrum")^8+tm_X3b_zxx_title:(%2B"Quadrum")^8)&facet.limit=10&omitHeader=true&facet.mincount=1&wt=json&facet=true&facet.sort=count&rq={!rerank+reRankQuery%3D'+{!payload_score+f%3Dboost_term+v%3D"Quadrum"+func%3Dmax}'}} hits=96 status=0 QTime=2
