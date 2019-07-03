@@ -20,4 +20,5 @@ hidden:
   author: true
   description: true
   feed: true
+  langcode: true
   link: true

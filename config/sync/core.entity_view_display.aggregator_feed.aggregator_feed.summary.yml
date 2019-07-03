@@ -24,4 +24,5 @@ hidden:
   description: true
   feed_icon: true
   image: true
+  langcode: true
   link: true

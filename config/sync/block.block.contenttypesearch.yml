@@ -1,0 +1,23 @@
+uuid: fc59de12-d198-4802-a35f-d98d1e7aece8
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type_search
+  module:
+    - facets
+  theme:
+    - bartik
+id: contenttypesearch
+theme: bartik
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:content_type_search'
+settings:
+  id: 'facet_block:content_type_search'
+  label: 'Content type search'
+  provider: facets
+  label_display: visible
+  block_id: contenttypesearch
+visibility: {  }

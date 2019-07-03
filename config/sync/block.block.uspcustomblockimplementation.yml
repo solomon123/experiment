@@ -12,7 +12,7 @@ dependencies:
 id: uspcustomblockimplementation
 theme: bartik
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: 'block_content:bee5437a-694a-4112-945a-06010701b8dc'
 settings:
