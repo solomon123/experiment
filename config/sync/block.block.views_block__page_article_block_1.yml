@@ -1,0 +1,30 @@
+uuid: 5cfcacc6-4863-41ec-8ea6-1dee51980949
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.page_article
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__page_article_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:page_article-block_1'
+settings:
+  id: 'views_block:page_article-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
